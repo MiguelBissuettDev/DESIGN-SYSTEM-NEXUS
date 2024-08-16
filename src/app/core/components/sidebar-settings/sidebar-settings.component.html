@@ -1,0 +1,58 @@
+@if(signalsService.openConfigSideState()) {
+    <section 
+    (click)="signalsService.setOpenConfigSideState(false)" 
+    class="absolute top-0 right-0 left-0 col-span-8 bg-[#00000080] w-full h-full">
+    </section>
+}
+
+<section 
+[ngClass]="signalsService.openConfigSideState() ? 'right-0' : '-right-full'" 
+class="col-span-4 bg-white h-full w-96 rounded-tl-xl rounded-bl-xl absolute top-0 right-0 transition-[right] duration-300">
+    <section class="flex items-center justify-between px-5 py-2">
+        <span>Settings</span>
+        <button class="text-[#0073e6] w-[1em] h-[1em] hover:bg-[#0000000a] p-5 rounded-[50%] flex items-center justify-center">
+            <i class="ri-close-line"></i>
+        </button>
+    </section>
+
+    <section class="flex flex-col px-5">
+        <span>MODE</span>
+        <div>
+            <button>
+                <i class="ri-sun-line"></i>
+                <span>Ligth</span>
+            </button>
+            <button>
+                <i class="ri-computer-line"></i>
+                <span>System</span>
+            </button>
+            <button>
+                <i class="ri-moon-line"></i>
+                <span>Dark</span>
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <span>DIRECTION</span>
+        <div>
+            <button>
+                <i class="ri-text-direction-l"></i>
+                <span>Left to rigth</span>
+            </button>
+            <button>
+                <i class="ri-text-direction-r"></i>
+                <span>Rigth to left</span>
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <span>COLOR</span>
+        <div>
+            <button>
+                <span>Edit docuemnt colors</span>
+            </button>
+        </div>
+    </section>
+</section>

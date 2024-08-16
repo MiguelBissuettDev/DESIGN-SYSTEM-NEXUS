@@ -1,0 +1,31 @@
+<header class="h-16 w-full flex items-center justify-between px-4 py-3 border-b-[#e8eaee] border-b-[1px]"> 
+    <section class="h-full flex items-center gap-4 text-end">
+        <div class="h-full flex items-center justify-center">
+            <img class="h-full" src="../../../../assets/images/nexus-logo.png" alt="nexus">
+        </div>
+        <div class="h-full flex flex-col items-start justify-center">
+            <span class="logotype text-[#576375] font-semibold text-base">NEXUS UI</span>
+            <span class="text-[#0073e6] font-medium text-xs">by MiguelBissuettDev</span>
+        </div>
+        <div class="h-full flex items-end justify-center">
+            <span class="text-[#0073e6] font-bold text-xs">v0.0.1</span>
+        </div>
+    </section>
+
+    <section class="flex items-center gap-2">
+        <button class="flex items-center gap-x-3 button-search px-2 text-[#303741] rounded-xl text-sm bg-[#f6f7f8] min-h-9 min-w-9 hover:bg-[#e8eaee] hover:border-[#cad0d8]">
+            <i class="ri-search-2-line text-[#0073e6]"></i>
+            <span>Search...</span>
+            <span class="bg-white p-1 rounded-lg font-bold text-xs border-[1px] border-[#dfe2e7] px-1">Ctrl+K</span>
+        </button>
+        <button class="flex items-center justify-center text-[#0073e6] border-[1px] h-[34px] w-[34px] bg-[#e8ebed1a] rounded-xl text-xl font-medium p-2 hover:bg-[#f6f7f8] hover:border-[#cad0d8] button-header border-[#d9dee2]">
+            <i class="ri-github-fill"></i>
+        </button>
+        <button class="flex items-center justify-center text-[#0073e6] border-[1px] h-[34px] w-[34px] bg-[#e8ebed1a] rounded-xl text-xl font-medium p-2 hover:bg-[#f6f7f8] hover:border-[#cad0d8] button-header border-[#d9dee2]">
+            <i class="ri-notification-3-line"></i>
+        </button>
+        <button (click)="openConfigSide()" class="flex items-center justify-center text-[#0073e6] border-[1px] h-[34px] w-[34px] bg-[#e8ebed1a] rounded-xl text-xl font-medium p-2 hover:bg-[#f6f7f8] hover:border-[#cad0d8] button-header border-[#d9dee2]">
+            <i class="ri-settings-4-line"></i>
+        </button>
+    </section>
+</header>
